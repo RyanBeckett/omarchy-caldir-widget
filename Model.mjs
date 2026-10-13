@@ -23,6 +23,7 @@ export {
 export {
   normalizedEvent,
   parseCalendarColors,
+  parseCalendarList,
   parseAgenda
 } from "./model/events.mjs"
 
@@ -44,7 +45,11 @@ export {
   LOOKAHEAD_MINUTES,
   normalizeHighlightEvents,
   normalizeDaysAhead,
-  normalizeLookaheadMinutes
+  normalizeLookaheadMinutes,
+  HIDE_ALL_DAY,
+  HIDE_WORKING_LOCATION,
+  normalizeHideAllDay,
+  normalizeHideWorkingLocation
 } from "./model/settings.mjs"
 
 export {
@@ -52,7 +57,10 @@ export {
   normalizeCalendars,
   parseRencalGroup,
   resolveCalendarFilter,
-  filterByCalendars
+  listRencalGroups,
+  filterByCalendars,
+  filterEvents,
+  WORKING_LOCATION_EVENT_TYPE
 } from "./model/calendars.mjs"
 
 export {
