@@ -41,7 +41,7 @@ Column {
     else {
       // Start the custom list from what is shown now, so switching is a no-op
       // until a calendar is toggled.
-      var slugs = calendars.filter(function(c) { return calendarShown(c.slug) })
+      const slugs = calendars.filter(function(c) { return calendarShown(c.slug) })
         .map(function(c) { return c.slug })
       save("calendars", slugs.length > 0 ? slugs : calendars.map(function(c) { return c.slug }))
     }
